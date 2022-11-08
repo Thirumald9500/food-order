@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("https://img.freepik.com/free-photo/top-view-circular-food-frame_23-2148723455.jpg?w=900&t=st=1667375178~exp=1667375778~hmac=e9ba21e58bc02fbdc48f01c2e53bb672f2faed71882b942f0b139e51ac3becf0");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 1600px 760px;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 440px;
+    border-radius: 45px;
+    border: 1px solid;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+.form-group{
+    position: relative;
+    margin-bottom:20px;
+}
+ 
+.form-control{
+    margin: auto;
+    margin-top: 1.5rem;
+    width:80%;
+    height:40px;
+    border:none;
+    padding:5px 7px 5px 15px;
+    background:#fff;
+    color:#666;
+    border:2px solid #ddd;
+    text-align: center;
+}
+
+.log-btn{
+    margin-left:37px;
+    background:#f55f01;
+    width:80%;
+    font-size:16px;
+    height:50px;
+    color:#fff;
+    border:1px white;
+    border-radius: 25px;
+ 
+}
+
+.mailicon{
+    align-items: center;
+    top: 10px;
+    position: absolute;
+    color: #f55f01;
+    font-size: 25px;
+    margin-left: 60px;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 168px;
+    vertical-align: middle;
+    color: #f55f01;
+    font-size: 35px;
+}
+.form-group2{
+    position: relative;
+    margin-bottom:15px;
+}
+.log-btn2{
+    margin-left:37px;
+    background:#d8d8d6;
+    width:80%;
+    font-size:16px;
+    height:50px;
+
+    border:1px solid;
+    border-radius: 25px;
+ 
+}

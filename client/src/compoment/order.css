@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.o_conatiner{
+    background-image: url("https://img.freepik.com/free-photo/top-view-food-frame-with-copy-space_23-2148723447.jpg?w=900&t=st=1667537778~exp=1667538378~hmac=fe6bce1e8fd3592b9ce990d1630d37c8311fd51d02d5eedc92571458b6ec5f0f");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 1700px 780px;
+    height: 800px;
+}
+.order_box{
+    margin-left: 800px;
+    padding-top: 10px;
+}
+.order_form{
+    margin-top: 100px;
+    width: 500px;
+    height: 520px;
+    margin-bottom: 4rem;
+    border: 3px solid black;
+    border-radius: 25px;
+    /* background-color: antiquewhite; */
+}
+
+.form_heading{
+    margin-top: 05px;
+    text-align: center;
+    color: #ffff;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+}
+#brandname{
+    margin-top: 0.5rem;
+}
+.logo2{
+    color: #f55f01;
+}
+.form-group3{
+    position: relative;
+    margin-bottom:15px;
+    margin-left:15px;
+}

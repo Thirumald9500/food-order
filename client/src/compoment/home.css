@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.containerfluid{
+    width: 100%;
+    height: 780px;
+    background-color:#88ceff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: aqua;
+}
+.brand{
+    display: flex;
+    flex-direction: row;
+    margin-left:1rem;
+    padding-top: 1rem;
+    font-size: 65px;
+}
+.brandname{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+.deliverybox{
+    margin-top: 1rem;
+    display: flex;
+    font-size: 75px;
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+
+.contact{
+    padding-top: 10px;
+     margin-left: 40px;
+    /* margin-right: 0.5rem; */
+}
+.foodhome{
+    display: flex;
+}
+.banner{
+    margin: auto;
+    margin-top: 4rem;
+    width: 35%;
+    height: 480px;
+    background-color: antiquewhite;
+}
+.banner2{
+    margin: auto;
+    margin-top: 4rem;
+    width: 35%;
+    height: 480px;
+    background-color: antiquewhite;
+}
+.h_food{
+    padding-left: 400px;
+}
