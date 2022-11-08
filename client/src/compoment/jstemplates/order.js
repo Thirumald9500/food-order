@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import "./order.css"
+import "../csstemplates/order.css";
 import { CgProfile } from "react-icons/cg";
 import { Si1Password } from "react-icons/si";
 import { BiMobileAlt } from "react-icons/bi";

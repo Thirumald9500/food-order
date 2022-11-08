@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route,} from 'react-router-dom';
-import Home from "./compoment/home"
-import Login from './compoment/login';
-import Register from './compoment/register';
-import Product from './compoment/product';
-import Order from './compoment/order';
-import Navbar from './compoment/navbar';
-import Cart from './compoment/cartpage';
+import Home from "./compoment/jstemplates/home"
+import Login from './compoment/jstemplates/login';
+import Register from './compoment/jstemplates/register';
+import Product from './compoment/jstemplates/product';
+import Order from './compoment/jstemplates/order';
+import Navbar from './compoment/jstemplates/navbar';
+import Cart from './compoment/jstemplates/cartpage';
 
 
 function App() {

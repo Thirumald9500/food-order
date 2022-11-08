@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css"
+import "../csstemplates/home.css";
 import { MdFoodBank } from 'react-icons/md';
 import { HiOutlineDeviceMobile } from 'react-icons/hi';
 

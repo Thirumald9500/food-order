@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./login.css"
+import "../csstemplates/login.css"
 import { CgProfile } from "react-icons/cg";
 import { Si1Password } from "react-icons/si";
 import { MdFoodBank } from 'react-icons/md';
@@ -34,7 +34,7 @@ const Login = () =>{
             }
             else{
                 console.log(Response.data);
-                // navigate("/product")
+                navigate("/product")
             }
         } ))
     }

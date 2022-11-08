@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./register.css"
+import "../csstemplates/register.css";
 import { CgProfile } from "react-icons/cg";
 import { Si1Password } from "react-icons/si";
 import { MdFoodBank } from 'react-icons/md';

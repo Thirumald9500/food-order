@@ -8,6 +8,7 @@ const session = require('express-session')
 const cookie = require("cookie-parser")
 const secret =require("./security")
 const jwt = require("jsonwebtoken")
+const Tokens = require("./authentication")
 
 
 // database connection
@@ -70,13 +71,15 @@ router.post("/login",(req,res)=>{
             bcrypt.compare(password,password2,(err,response)=>{
                 if(response){
                     // jwt token
-                    const id = result[0].slno
-                    const token = jwt.sign({id:id},secret.key)
-                    res.header('auth',token).send(token)
-                    res.cookie("jwt",token)
-                    //session user
-                    // req.session.user = result;
-                    // res.send({result:result})
+                    const id = result[0].slno;
+                    // createing token
+                    const token = Tokens.t_gen(id)
+                    res.cookie(secret.c_name,token,{
+                        expires:secret.time
+                    })
+                    // data=req.cookies.id
+                    // console.log(data);
+                    res.send({result:result})
                 }else{
                     res.send({message:"invalid password"})
                 }
@@ -87,10 +90,7 @@ router.post("/login",(req,res)=>{
     })
 })
 
-const t_validate = (token) =>{
-    const data=jwt.verify(token,secret.key);
-    return data
-}
+
 
 
 

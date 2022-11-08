@@ -1,5 +1,6 @@
 import React from "react";
-import "./navbar.css";
+import "../csstemplates/navbar.css";
+import { CiShoppingCart } from "react-icons/ci";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
         </span>
         <div className="cart" >
           <span>
-            <i className="fa fa-cart-plus"></i>
+            <CiShoppingCart/>
           </span>
           <span>0</span>
         </div>

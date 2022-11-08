@@ -1,7 +1,9 @@
 import React,{useEffect, useState} from "react";
-import './product.css';
+import '../csstemplates/product.css';
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const Product = () =>{
+    const navigate = useNavigate();
     const [foodshow,setfoodshow]= useState([]);
     // const display = foodshow.map((item) => <li>{item.price}</li>)
     useEffect(()=>{
@@ -9,6 +11,11 @@ const Product = () =>{
             setfoodshow(Response.data);
         })
     },[])
+    const submit1=(e)=>{
+        e.preventDefalut();
+       // console.log(item,"hiut")
+    }
+
     return(
         <div className="containerfluid2">
             <div className="products">
@@ -27,7 +34,7 @@ const Product = () =>{
                                             <p className="card-text">Price : {item.price}</p>
                                         </div>
                                     <div class="card-footer text-center">
-                                        <a href="A" className="btn btn-primary">Add to cart</a>
+                                        <button className="btn btn-primary" type="button" onClick={submit1(item)}>Add To Cart</button>
                                     </div>
                                     </div>
                                 </div>
