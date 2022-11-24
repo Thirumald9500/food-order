@@ -5,16 +5,33 @@ import { useNavigate } from "react-router-dom";
 const Product = () =>{
     const navigate = useNavigate();
     const [foodshow,setfoodshow]= useState([]);
+    const [cartdata,setcartdata]=useState([])
     // const display = foodshow.map((item) => <li>{item.price}</li>)
     useEffect(()=>{
         axios.get("http://localhost:7001/product").then((Response)=>{
+            console.log(Response.data)
             setfoodshow(Response.data);
         })
     },[])
-    const submit1=(e)=>{
-        e.preventDefalut();
-       // console.log(item,"hiut")
-    }
+    //console.log(cartdata);
+    const submit1 = (item) => {
+        let num = 0;
+        //console.log(item.price)
+        axios.post("http://localhost:7001/cart",{
+            foodname:item.foodname,
+            price:item.price,
+            url:item.url}).then((Response)=>{
+                //console.log(Response.data)
+                //console.log(item.price,'ji')
+                if (Response.data === "sucessful"){
+                    alert("added to cart")
+                    num=+1   
+                    navigate("/product")
+                }
+            })
+        }
+    
+
 
     return(
         <div className="containerfluid2">
@@ -33,8 +50,8 @@ const Product = () =>{
                                             <h5 className="card-title">{ item.foodname}</h5>
                                             <p className="card-text">Price : {item.price}</p>
                                         </div>
-                                    <div class="card-footer text-center">
-                                        <button className="btn btn-primary" type="button" onClick={submit1(item)}>Add To Cart</button>
+                                    <div className="card-footer text-center">
+                                        <button className="btn btn-primary" type="button" onClick={()=>submit1(item)}>Add To Cart</button>
                                     </div>
                                     </div>
                                 </div>
